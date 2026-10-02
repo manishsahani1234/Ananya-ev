@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ananya Electric Vehicle | Best EV Showroom in Greater Noida</title>
+    <meta name="description" content="Ananya Electric Vehicle Showroom in Omicron 1st, Greater Noida. Find top-rated electric scooters, Non-RTO models, lithium battery bikes with low running costs and easy financing.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Top Announcement Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <div class="top-info">
+                <span><i class="fa-solid fa-location-dot"></i> C 211, Near GAUR ATULYAM, Omicron 1st, Greater Noida</span>
+                <span><i class="fa-solid fa-clock"></i> Open All 7 Days: 9:00 AM - 8:30 PM</span>
+            </div>
+            <div class="top-contact">
+                <a href="tel:+919876543210"><i class="fa-solid fa-phone"></i> Call Now</a>
+                <a href="https://wa.me/919876543210?text=Hello%20Ananya%20EV,%20I%20want%20to%20know%20more%20about%20electric%20scooters" target="_blank" class="whatsapp-top"><i class="fa-brands fa-whatsapp"></i> WhatsApp Inquiry</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header / Navigation -->
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="#" class="brand-logo">
+                <div class="logo-icon"><i class="fa-solid fa-bolt"></i></div>
+                <div class="logo-text">
+                    <span class="logo-title">ANANYA</span>
+                    <span class="logo-sub">ELECTRIC VEHICLE</span>
+                </div>
+            </a>
+
+            <nav class="main-nav">
+                <ul class="nav-menu">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#models">Scooter Models</a></li>
+                    <li><a href="#why-ev">Why Choose Us</a></li>
+                    <li><a href="#calculator">Savings Calculator</a></li>
+                    <li><a href="#location">Showroom Location</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="btn btn-primary" onclick="openTestRideModal()">
+                    <i class="fa-solid fa-motorcycle"></i> Book Test Ride
+                </button>
+                <button class="mobile-toggle" aria-label="Toggle Menu" onclick="toggleMobileMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-drawer" id="mobileDrawer">
+        <div class="drawer-header">
+            <span class="logo-title">ANANYA EV</span>
+            <button class="close-drawer" onclick="toggleMobileMenu()"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <ul class="drawer-menu">
+            <li><a href="#home" onclick="toggleMobileMenu()">Home</a></li>
+            <li><a href="#models" onclick="toggleMobileMenu()">Scooter Models</a></li>
+            <li><a href="#why-ev" onclick="toggleMobileMenu()">Why Choose Us</a></li>
+            <li><a href="#calculator" onclick="toggleMobileMenu()">Savings Calculator</a></li>
+            <li><a href="#location" onclick="toggleMobileMenu()">Showroom Location</a></li>
+            <li><a href="#contact" onclick="toggleMobileMenu()">Contact Us</a></li>
+        </ul>
+        <div class="drawer-actions">
+            <button class="btn btn-primary btn-block" onclick="toggleMobileMenu(); openTestRideModal();">
+                <i class="fa-solid fa-motorcycle"></i> Book Test Ride
+            </button>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-bg-overlay"></div>
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <div class="hero-badge">
+                    <i class="fa-solid fa-leaf"></i> 100% Eco-Friendly & Zero Emission
+                </div>
+                <h1>Empower Your Ride With <span>Ananya Electric Vehicle</span></h1>
+                <p class="hero-desc">
+                    Welcome to Greater Noida's premier Electric Scooter Showroom! Discover long-range battery technology, stylish non-RTO models, instant financing, and zero running costs.
+                </p>
+
+                <div class="hero-features-strip">
+                    <div class="hero-feat"><i class="fa-solid fa-charging-station"></i> Portable Charger</div>
+                    <div class="hero-feat"><i class="fa-solid fa-id-card-clip"></i> No License Needed (Non-RTO)</div>
+                    <div class="hero-feat"><i class="fa-solid fa-indian-rupee-sign"></i> ₹0.15 / km Cost</div>
+                </div>
+
+                <div class="hero-cta-buttons">
+                    <button class="btn btn-primary btn-lg" onclick="openTestRideModal()">
+                        <i class="fa-solid fa-motorcycle"></i> Book Free Test Ride
+                    </button>
+                    <a href="#models" class="btn btn-outline btn-lg">
+                        <i class="fa-solid fa-eye"></i> View Scooter Models
+                    </a>
+                </div>
+
+                <div class="hero-trust">
+                    <div class="trust-item">
+                        <strong>500+</strong>
+                        <span>Happy Customers</span>
+                    </div>
+                    <div class="trust-divider"></div>
+                    <div class="trust-item">
+                        <strong>3 Year</strong>
+                        <span>Battery Warranty</span>
+                    </div>
+                    <div class="trust-divider"></div>
+                    <div class="trust-item">
+                        <strong>0%</strong>
+                        <span>Down Payment Deals</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-image-box">
+                <div class="hero-img-wrapper">
+                    <img src="https://greenev.life/wp-content/uploads/2026/08/Gemini_Generated_Image_yl5j76yl5j76yl5j.png" alt="Ananya Electric Vehicle Scooter Showcase" class="hero-main-img">
+                    <div class="floating-badge badge-range">
+                        <i class="fa-solid fa-gauge-high"></i>
+                        <div>
+                            <strong>Up to 80+ Km</strong>
+                            <span>Single Charge Range</span>
+                        </div>
+                    </div>
+                    <div class="floating-badge badge-price">
+                        <i class="fa-solid fa-tag"></i>
+                        <div>
+                            <strong>Affordable Pricing</strong>
+                            <span>Easy EMI Options</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scooter Showcase Section -->
+    <section id="models" class="models-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-heading">OUR EXCLUSIVE RANGE</span>
+                <h2>Explore Electric Scooter Models</h2>
+                <p>Designed for Indian roads — unbeatable style, max comfort, and superior mileage.</p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="all">All Models</button>
+                <button class="filter-btn" data-filter="non-rto">Non-RTO (No License)</button>
+                <button class="filter-btn" data-filter="long-range">80KM Long Range</button>
+                <button class="filter-btn" data-filter="bestseller">Best Sellers</button>
+            </div>
+
+            <!-- Scooter Grid -->
+            <div class="scooter-grid" id="scooterGrid">
+
+                <!-- Card 1: Green Sunny 80KM -->
+                <div class="scooter-card" data-category="non-rto long-range bestseller">
+                    <div class="card-badge bestseller-tag">Best Seller</div>
+                    <div class="scooter-img-holder">
+                        <img src="https://greenev.life/wp-content/uploads/2026/09/png.50.jpg" alt="Ananya Sunny Electric Scooter">
+                    </div>
+                    <div class="scooter-details">
+                        <div class="scooter-tags">
+                            <span class="tag">Non-RTO</span>
+                            <span class="tag">Lithium-Ion</span>
+                        </div>
+                        <h3>Ananya Sunny EV (80 Km Range)</h3>
+                        <p class="scooter-desc">Sleek urban scooter with portable charger, tubeless tires, and digital dashboard.</p>
+
+                        <div class="specs-grid">
+                            <div class="spec-item">
+                                <i class="fa-solid fa-charging-station"></i>
+                                <span>Range: 80 Km</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fa-solid fa-bolt"></i>
+                                <span>Speed: 25 km/h</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fa-solid fa-clock"></i>
+                                <span>Charge: 3-4 Hrs</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fa-solid fa-shield-halved"></i>
+                                <span>3 Yr Warranty</span>
+                            </div>
+                        </div>
+
+                        <div class="card-action">
+                            <div class="price-box">
+                                <span class="price-label">Starting Price</span>
+                                <span class="price-val">₹48,999*</span>
+                            </div>
+                            <button class="btn btn-primary btn-sm" onclick="openInquiryModal('Ananya Sunny EV (80 Km Range)')">
+                                Inquiry / Book
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Green Vista 60KM Red/Black -->
+                <div class="scooter-card" data-category="non-rto bestseller">
+                    <div class="card-badge bestseller-tag">Popular</div>
+                    <div class="scooter-img-holder">
+                        <img src="https://greenev.life/wp-content/uploads/2026/07/1-1.jpg" alt="Ananya Vista Electric Scooter">
+                    </div>
+                    <div class="scooter-details">
+                        <div class="scooter-tags">
+                            <span class="tag">Non-RTO</span>
+                            <span class="tag">Dual Disc</span>
+                        </div>
+                        <h3>Ananya Vista EV (60 Km Range)</h3>
+                        <p class="scooter-desc">Heavy-duty chassis, comfortable dual seat, dynamic LED headlight & anti-theft alarm.</p>
+
+                        <div class="specs-grid">
+                            <div class="spec-item">
+                                <i class="fa-solid fa-charging-station"></i>
+                                <span>Range: 60 Km</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fa-solid fa-bolt"></i>
+                                <span>Speed: 25 km/h</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fa-solid fa-clock"></i>
+                                <span>Charge: 4 Hrs</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fa-solid fa-shield-halved"></i>
+                                <span>3 Yr Warranty</span>
+                            </div>
+                        </div>
+
+                        <div class="card-action">
+                            <div class="price-box">
+                                <span class="price-label">Starting Price</span>
+                                <span class="price-val">₹44,500*</span>
+                            </div>
+                            <button class="btn btn-primary btn-sm" onclick="openInquiryModal('Ananya Vista EV (60 Km Range)')">
+                                Inquiry / Book
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Green Polo 60KM -->
+                <div class="scooter-card" data-category="long-range">
+                    <div class="card-badge new-tag">New</div>
+                    <div class="scooter-img-holder">
+                        <img src="https://greenev.life/wp-content/uploads/2026/09/png.40-1.jpg" alt="Ananya Polo Electric Scooter">
+                    </div>
+                    <div class="scooter-details">
+                        <div class="scooter-tags">
+                            <span class="tag">Sporty Design</span>
+                            <span class="tag">Fast Charge</span>
+                        </div>
+                        <h3>Ananya Polo EV (60 Km Range)</h3>
+                        <p class="scooter-desc">Youthful sporty body with alloy wheels, USB mobile charging port, and spacious boot.</p>
+
+                        <div class="specs-grid">
+                            <div class="spec-item">
+                                <i class="fa-solid fa-charging-station"></i>
+                                <span>Range: 60 Km</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fa-solid fa-bolt"></i>
+                                <span>Speed: 25 km/h</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fa-solid fa-clock"></i>
+                                <span>Charge: 3.5 Hrs</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fa-solid fa-shield-halved"></i>
+                                <span>3 Yr Warranty</span>
+                            </div>
+                        </div>
+
+                        <div class="card-action">
+                            <div class="price-box">
+                                <span class="price-label">Starting Price</span>
+                                <span class="price-val">₹46,999*</span>
+                            </div>
+                            <button class="btn btn-primary btn-sm" onclick="openInquiryModal('Ananya Polo EV (60 Km Range)')">
+                                Inquiry / Book
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4: Green Elexa 80KM -->
+                <div class="scooter-card" data-category="non-rto long-range">
+                    <div class="card-badge premium-tag">Premium</div>
+                    <div class="scooter-img-holder">
+                        <img src="https://greenev.life/wp-content/uploads/2025/12/1_7d310abb-ceb9-48ce-87aa-10b812c210a4.webp" alt="Ananya Elexa EV Scooter">
+                    </div>
+                    <div class="scooter-details">
+                        <div class="scooter-tags">
+                            <span class="tag">Ultra Range</span>
+                            <span class="tag">Keyless Entry</span>
+                        </div>
+                        <h3>Ananya Elexa EV (80 Km Range)</h3>
+                        <p class="scooter-desc">Luxury finish electric scooter with remote keyless start, reverse gear mode, and GPS tracking option.</p>
+
+                        <div class="specs-grid">
+                            <div class="spec-item">
+                                <i class="fa-solid fa-charging-station"></i>
+                                <span>Range: 80-90 Km</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fa-solid fa-bolt"></i>
+                                <span>Speed: 25 km/h</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fa-solid fa-clock"></i>
+                                <span>Charge: 3-4 Hrs</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fa-solid fa-shield-halved"></i>
+                                <span>3 Yr Warranty</span>
+                            </div>
+                        </div>
+
+                        <div class="card-action">
+                            <div class="price-box">
+                                <span class="price-label">Starting Price</span>
+                                <span class="price-val">₹52,999*</span>
+                            </div>
+                            <button class="btn btn-primary btn-sm" onclick="openInquiryModal('Ananya Elexa EV (80 Km Range)')">
+                                Inquiry / Book
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5: Green Udaan -->
+                <div class="scooter-card" data-category="non-rto">
+                    <div class="card-badge eco-tag">Eco Choice</div>
+                    <div class="scooter-img-holder">
+                        <img src="https://greenev.life/wp-content/uploads/2026/08/Gemini_Generated_Image_t95ol3t95ol3t95o-1.png" alt="Ananya Udaan EV Scooter">
+                    </div>
+                    <div class="scooter-details">
+                        <div class="scooter-tags">
+                            <span class="tag">Budget Friendly</span>
+                            <span class="tag">Lightweight</span>
+                        </div>
+                        <h3>Ananya Udaan EV (40 Km Range)</h3>
+                        <p class="scooter-desc">Perfect compact daily commuter for local market runs, students, and senior citizens.</p>
+
+                        <div class="specs-grid">
+                            <div class="spec-item">
+                                <i class="fa-solid fa-charging-station"></i>
+                                <span>Range: 40 Km</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fa-solid fa-bolt"></i>
+                                <span>Speed: 25 km/h</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fa-solid fa-clock"></i>
+                                <span>Charge: 3 Hrs</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fa-solid fa-shield-halved"></i>
+                                <span>2 Yr Warranty</span>
+                            </div>
+                        </div>
+
+                        <div class="card-action">
+                            <div class="price-box">
+                                <span class="price-label">Starting Price</span>
+                                <span class="price-val">₹39,999*</span>
+                            </div>
+                            <button class="btn btn-primary btn-sm" onclick="openInquiryModal('Ananya Udaan EV (40 Km Range)')">
+                                Inquiry / Book
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6: Green Invicta Pro -->
+                <div class="scooter-card" data-category="long-range bestseller">
+                    <div class="card-badge flagship-tag">Flagship</div>
+                    <div class="scooter-img-holder">
+                        <img src="https://greenev.life/wp-content/uploads/2026/08/Gemini_Generated_Image_ae9cw5ae9cw5ae9c.png" alt="Ananya Invicta Pro EV Scooter">
+                    </div>
+                    <div class="scooter-details">
+                        <div class="scooter-tags">
+                            <span class="tag">Heavy Duty</span>
+                            <span class="tag">High Torque</span>
+                        </div>
+                        <h3>Ananya Invicta Pro (100 Km Range)</h3>
+                        <p class="scooter-desc">Maximum power, robust suspension, extra legroom, and fast portable charger included.</p>
+
+                        <div class="specs-grid">
+                            <div class="spec-item">
+                                <i class="fa-solid fa-charging-station"></i>
+                                <span>Range: 100 Km</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fa-solid fa-bolt"></i>
+                                <span>Speed: 25-45 km/h</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fa-solid fa-clock"></i>
+                                <span>Charge: 4 Hrs</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fa-solid fa-shield-halved"></i>
+                                <span>3 Yr Warranty</span>
+                            </div>
+                        </div>
+
+                        <div class="card-action">
+                            <div class="price-box">
+                                <span class="price-label">Starting Price</span>
+                                <span class="price-val">₹58,499*</span>
+                            </div>
+                            <button class="btn btn-primary btn-sm" onclick="openInquiryModal('Ananya Invicta Pro (100 Km Range)')">
+                                Inquiry / Book
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Ananya EV Section -->
+    <section id="why-ev" class="why-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-heading">WHY CHOOSE US</span>
+                <h2>6 Reasons To Buy From Ananya Electric Vehicle</h2>
+                <p>We don't just sell scooters; we provide complete peace of mind with trusted warranty and local service.</p>
+            </div>
+
+            <div class="why-grid">
+                <div class="why-card">
+                    <div class="why-number">01</div>
+                    <div class="why-icon"><i class="fa-solid fa-road"></i></div>
+                    <h3>Made For Indian Roads</h3>
+                    <p>Designed with heavy suspension, high ground clearance, and durable body frames for smooth riding anywhere.</p>
+                </div>
+
+                <div class="why-card">
+                    <div class="why-number">02</div>
+                    <div class="why-icon"><i class="fa-solid fa-wallet"></i></div>
+                    <h3>Affordable EV Ownership</h3>
+                    <p>Extremely low maintenance and running cost of only ₹15 for a 100km full battery ride!</p>
+                </div>
+
+                <div class="why-card">
+                    <div class="why-number">03</div>
+                    <div class="why-icon"><i class="fa-solid fa-battery-full"></i></div>
+                    <h3>Reliable Battery Technology</h3>
+                    <p>Advanced Lithium-ion batteries with smart BMS protection against overheating and overcharging.</p>
+                </div>
+
+                <div class="why-card">
+                    <div class="why-number">04</div>
+                    <div class="why-icon"><i class="fa-solid fa-plug"></i></div>
+                    <h3>Easy Home Charging</h3>
+                    <p>Plug into any standard 15A home socket. Complete 100% charging in just 3 to 4 hours.</p>
+                </div>
+
+                <div class="why-card">
+                    <div class="why-number">05</div>
+                    <div class="why-icon"><i class="fa-solid fa-wrench"></i></div>
+                    <h3>Local Service Network</h3>
+                    <p>Dedicated doorstep service & quick resolution by trained technicians in Omicron 1st & Greater Noida.</p>
+                </div>
+
+                <div class="why-card">
+                    <div class="why-number">06</div>
+                    <div class="why-icon"><i class="fa-solid fa-award"></i></div>
+                    <h3>Warranty You Can Trust</h3>
+                    <p>Up to 3-year comprehensive warranty on battery, motor, and controller with instant replacement guarantee.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EV Savings Calculator Section -->
+    <section id="calculator" class="calc-section">
+        <div class="container">
+            <div class="calc-box">
+                <div class="calc-header text-center">
+                    <span class="sub-heading">CALCULATE YOUR SAVINGS</span>
+                    <h2>How Much Will You Save With Ananya EV?</h2>
+                    <p>See how fast an electric scooter pays for itself compared to a petrol scooter.</p>
+                </div>
+
+                <div class="calc-body-grid">
+                    <div class="calc-controls">
+                        <div class="form-group">
+                            <label for="dailyKm">Daily Travel Distance: <strong id="dailyKmVal">30 Km</strong></label>
+                            <input type="range" id="dailyKm" min="5" max="100" value="30" class="range-slider" oninput="updateCalculator()">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="petrolPrice">Current Petrol Price (₹/Litre):</label>
+                            <input type="number" id="petrolPrice" value="96" class="form-control" oninput="updateCalculator()">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="petrolMileage">Petrol Scooter Mileage (Km/Litre):</label>
+                            <input type="number" id="petrolMileage" value="40" class="form-control" oninput="updateCalculator()">
+                        </div>
+                    </div>
+
+                    <div class="calc-results">
+                        <div class="result-card monthly-card">
+                            <span class="result-title">Monthly Petrol Expense</span>
+                            <span class="result-amount danger" id="monthlyPetrol">₹2,160</span>
+                        </div>
+
+                        <div class="result-card ev-card">
+                            <span class="result-title">Monthly EV Electricity Expense</span>
+                            <span class="result-amount success" id="monthlyEV">₹135</span>
+                        </div>
+
+                        <div class="highlight-savings-box">
+                            <i class="fa-solid fa-piggy-bank"></i>
+                            <div>
+                                <span class="sav-title">Your Net Savings Per Year:</span>
+                                <h3 id="yearlySavings">₹24,300</h3>
+                                <p>You save enough money to cover the cost of your electric scooter in under 2 years!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Showroom Location & Map Section -->
+    <section id="location" class="location-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-heading">VISIT OUR SHOWROOM</span>
+                <h2>Find Us On Google Maps</h2>
+                <p>Located conveniently in Omicron 1st, Greater Noida (Near GAUR ATULYAM).</p>
+            </div>
+
+            <div class="location-grid">
+                <div class="location-info-card">
+                    <h3><i class="fa-solid fa-store"></i> Ananya Electric Vehicle</h3>
+                    <p class="loc-address">
+                        <i class="fa-solid fa-location-dot"></i> C 211, near by GAUR ATULYAM, Omicron 1st, Mathurapur, Greater Noida, Uttar Pradesh 201310
+                    </p>
+
+                    <div class="loc-details-list">
+                        <div class="loc-item">
+                            <i class="fa-solid fa-clock"></i>
+                            <div>
+                                <strong>Showroom Timings</strong>
+                                <span>Monday - Sunday: 9:00 AM - 8:30 PM</span>
+                            </div>
+                        </div>
+                        <div class="loc-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <strong>Call / Helpdesk</strong>
+                                <span>+91 98765 43210 / +91 98123 45678</span>
+                            </div>
+                        </div>
+                        <div class="loc-item">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <div>
+                                <strong>Direct Directions</strong>
+                                <span>Click below to open exact location link in Google Maps app</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="loc-buttons">
+                        <a href="https://maps.app.goo.gl/4SAcZFhUcASERxnE8?g_st=aw" target="_blank" class="btn btn-primary">
+                            <i class="fa-solid fa-route"></i> Get Map Directions
+                        </a>
+                        <a href="https://wa.me/919876543210?text=I%20am%20coming%20to%20visit%20Ananya%20EV%20showroom" target="_blank" class="btn btn-whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <div class="map-wrapper">
+                    <!-- Embedded Google Map -->
+                    <iframe 
+                        title="Ananya Electric Vehicle Location Map"
+                        src="https://maps.google.com/maps?q=Ananya%20electric%20vehicle%2C%20C%20211%2C%20near%20by%20GAUR%20ATULYAM%2C%20Omicron%201st%2C%20Greater%20Noida&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                        width="100%" 
+                        height="400" 
+                        style="border:0; border-radius: 16px;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Customer Reviews -->
+    <section class="reviews-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-heading">HAPPY RIDERS</span>
+                <h2>What Greater Noida Residents Say</h2>
+            </div>
+
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>"Brought Ananya Sunny 80KM model last month. Amazing performance and smooth ride. My daily petrol bill went down to almost zero!"</p>
+                    <div class="reviewer">
+                        <strong>Vikram Sharma</strong>
+                        <span>Omicron 1st, Greater Noida</span>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>"Best EV showroom near Gaur Atulyam! Staff explained non-RTO model very well. Quick delivery and doorstep service."</p>
+                    <div class="reviewer">
+                        <strong>Pooja Verma</strong>
+                        <span>Gamma 2, Greater Noida</span>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>"Got easy zero-percent financing for Vista scooter. Battery charge lasts full two days of my office commute."</p>
+                    <div class="reviewer">
+                        <strong>Amit Kumar</strong>
+                        <span>Delta 1, Greater Noida</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Inquiry Form Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-box">
+                <div class="contact-form-side">
+                    <span class="sub-heading">GET IN TOUCH</span>
+                    <h2>Book A Free Test Ride / Get Best Price Quote</h2>
+                    <p>Fill in your details below and our showroom expert will contact you within 15 minutes.</p>
+
+                    <form id="inquiryForm" onsubmit="handleFormSubmit(event)">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="userName">Full Name *</label>
+                                <input type="text" id="userName" required placeholder="e.g. Rahul Singh" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="userPhone">Phone Number *</label>
+                                <input type="tel" id="userPhone" required placeholder="e.g. 9876543210" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="selectedModel">Select Scooter Model</label>
+                                <select id="selectedModel" class="form-control">
+                                    <option value="Ananya Sunny EV (80 Km Range)">Ananya Sunny EV (80 Km Range)</option>
+                                    <option value="Ananya Vista EV (60 Km Range)">Ananya Vista EV (60 Km Range)</option>
+                                    <option value="Ananya Polo EV (60 Km Range)">Ananya Polo EV (60 Km Range)</option>
+                                    <option value="Ananya Elexa EV (80 Km Range)">Ananya Elexa EV (80 Km Range)</option>
+                                    <option value="Ananya Udaan EV (40 Km Range)">Ananya Udaan EV (40 Km Range)</option>
+                                    <option value="Ananya Invicta Pro (100 Km Range)">Ananya Invicta Pro (100 Km Range)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="preferredDate">Preferred Date</label>
+                                <input type="date" id="preferredDate" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="userAddress">Your Location / Address</label>
+                            <input type="text" id="userAddress" placeholder="e.g. Omicron 1st, Greater Noida" class="form-control">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block btn-lg">
+                            <i class="fa-solid fa-paper-plane"></i> Submit Request & Open WhatsApp
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-col branding-col">
+                <a href="#" class="brand-logo footer-logo">
+                    <div class="logo-icon"><i class="fa-solid fa-bolt"></i></div>
+                    <div class="logo-text">
+                        <span class="logo-title">ANANYA</span>
+                        <span class="logo-sub">ELECTRIC VEHICLE</span>
+                    </div>
+                </a>
+                <p>Your trusted destination for multi-brand electric scooters in Greater Noida. Quality vehicles, genuine spare parts, and doorstep service.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#models">Electric Scooters</a></li>
+                    <li><a href="#why-ev">Why Ananya EV</a></li>
+                    <li><a href="#calculator">Savings Calculator</a></li>
+                    <li><a href="#location">Showroom Map</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Scooter Models</h4>
+                <ul class="footer-links">
+                    <li><a href="#models">Ananya Sunny 80KM</a></li>
+                    <li><a href="#models">Ananya Vista 60KM</a></li>
+                    <li><a href="#models">Ananya Polo 60KM</a></li>
+                    <li><a href="#models">Ananya Elexa Pro</a></li>
+                    <li><a href="#models">Ananya Udaan Eco</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Showroom Address</h4>
+                <p class="footer-addr">
+                    <i class="fa-solid fa-location-dot"></i> C 211, near by GAUR ATULYAM, Omicron 1st, Mathurapur, Greater Noida, Uttar Pradesh 201310
+                </p>
+                <p><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
+                <p><i class="fa-solid fa-envelope"></i> info@ananyaev.com</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container text-center">
+                <p>&copy; 2026 Ananya Electric Vehicle Showroom. All Rights Reserved. | Made for Greater Noida</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Sticky Buttons -->
+    <a href="https://wa.me/919876543210?text=Hello%20Ananya%20EV%20Showroom,%20I%20want%20to%20inquire%20about%20electric%20scooter%20models" target="_blank" class="floating-wa" title="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Modal Popup for Test Ride / Inquiry -->
+    <div class="modal-backdrop" id="inquiryModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeInquiryModal()"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-header">
+                <h3><i class="fa-solid fa-bolt"></i> Book Test Ride / Get Offer</h3>
+                <p>Selected Model: <strong id="modalModelName">Ananya Sunny EV</strong></p>
+            </div>
+            <form onsubmit="handleModalSubmit(event)">
+                <div class="form-group">
+                    <label for="modalName">Your Name</label>
+                    <input type="text" id="modalName" required placeholder="Enter full name" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="modalPhone">Mobile Number</label>
+                    <input type="tel" id="modalPhone" required placeholder="Enter 10-digit mobile" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="modalCity">City / Locality</label>
+                    <input type="text" id="modalCity" value="Greater Noida" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">
+                    <i class="fa-brands fa-whatsapp"></i> Confirm & Send on WhatsApp
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
